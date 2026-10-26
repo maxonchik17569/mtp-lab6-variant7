@@ -84,3 +84,12 @@ lab6/
 tests/              unittest-тесты всех заданий
 docs/               report.md, heroku.md
 ```
+
+## Требования
+
+- Python 3.13 или новее.
+- [uv](https://docs.astral.sh/uv/) для запуска без ручной установки
+  зависимостей.
+- Flask, FastAPI, Jinja2 и httpx ставятся командами `uv run --with`.
+- Для Heroku подготовлены `Procfile` и `app.json`; живой деплой
+  требует аккаунта Heroku и не выполнялся.
