@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Каталог книг</title>
+</head>
+<body>
+  <main>
+    <h1>Каталог книг</h1>
+    <p>Всего книг: {{ books|length }}.</p>
+    {% if books %}
+    <ul>
+      {% for book in books %}
+      <li>
+        <h2>{{ book.title }}</h2>
+        <p>{{ book.author }}, {{ book.year }}</p>
+        <p>Жанр: {{ book.genre }}</p>
+        {% if book.available %}
+        <p>Статус: доступна</p>
+        {% else %}
+        <p>Статус: выдана</p>
+        {% endif %}
+        {% if book.year < 1970 %}
+        <p>Классика</p>
+        {% endif %}
+        {% if loop.last %}
+        <p>Последняя книга в каталоге.</p>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p>Каталог пуст.</p>
+    {% endif %}
+  </main>
+</body>
+</html>
