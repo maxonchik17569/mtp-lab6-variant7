@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>О лабораторной №6</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main class="card">
+    <p class="eyebrow">MTP · лабораторная №6</p>
+    <h1>Статическая страница</h1>
+    <p class="lead">
+      Flask отдаёт готовый HTML, а оформление вынесено в
+      <code>static/style.css</code>.
+    </p>
+    <ul class="facts">
+      <li><span>Вариант</span><strong>7</strong></li>
+      <li><span>Стек</span><strong>Python · Flask · FastAPI</strong></li>
+      <li><span>Проверка</span><strong>unittest + flake8</strong></li>
+    </ul>
+    <a class="button" href="/">Обновить страницу</a>
+  </main>
+</body>
+</html>
