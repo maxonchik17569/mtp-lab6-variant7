@@ -1,0 +1,22 @@
+{
+  "name": "mtp-lab6-variant7",
+  "description": "Лабораторная работа №6, вариант 7: REST API заметок.",
+  "repository": "https://github.com/maxonchik17569/mtp-lab6-variant7",
+  "keywords": [
+    "python",
+    "fastapi",
+    "flask",
+    "lab"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "env": {
+    "PYTHONUNBUFFERED": {
+      "description": "Небуферизованный вывод логов приложения.",
+      "value": "1"
+    }
+  }
+}
